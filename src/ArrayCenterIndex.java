@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class ArrayCenterIndex { // 求数组的中心下标 左边元素和=右边元素和
     public static void main(String[] args) {
@@ -6,6 +7,8 @@ public class ArrayCenterIndex { // 求数组的中心下标 左边元素和=右�
     }
 
     private static int pivotIndex(int[] nums) {
+        HashMap<Object, Object> map = new HashMap<>();
+        map.put("1", 1);
         int sum = Arrays.stream(nums).sum();
         int total = 0;
         for (int i = 0; i < nums.length; i++) {
